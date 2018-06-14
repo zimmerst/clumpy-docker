@@ -85,6 +85,7 @@ RUN cd /var/tmp && \
     make test && \
     cp -rpv src/cxx/generic_gcc/include/*.h /opt/healpix/include/. && \
     cp -rpv src/cxx/generic_gcc/lib/* /opt/healpix/lib/. && \
+    cp -rpv data /opt/healpix/. && \
     cp -rpv src/cxx/generic_gcc/bin/* /opt/healpix/bin/.
 
 ENV FITSIOLIBS_PATH=/usr/lib
